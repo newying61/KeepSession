@@ -5,6 +5,7 @@ Chrome extension for keeping session
 
 -----------
 background.js - GET Url every 10 mins by ajax
+
 popup.html, popup.js - Add/Delete/Edit/Enable/Disable Url refresh
 
 -----------
