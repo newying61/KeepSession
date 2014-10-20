@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Keep Session</title>
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+      .ctrlBtn {
+        margin-left: 15px;
+      }
+      .inputCtrl {
+        width: 75%;
+        margin: 10px 0;
+      }
+      .delBtn {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <label><strong>ID: </strong></label>
+    <input id="newId" placeholder="Please input Id here" class="inputCtrl" />
+    <br/>
+    <label><strong>URL:</strong></label>
+    <input id="newUrl" placeholder="Please input URL here" class="inputCtrl" />
+    <br/>
+    <button id="addNewUrlBtn" class="addBtn">Add</button>
+    <hr/>
+    <div id="sitesArea"></div>
+    <script type="text/template" id="siteCtrl">
+      <p>{url}</p>
+      <strong>{id}</strong>
+      <button class="ctrlBtn" ref="{id}">Keep session</button>
+      <button class="delBtn" ref="{id}">Delete</button>
+    </script>
+    <script src="popup.js"></script>
+  </body>
+</html>
+
